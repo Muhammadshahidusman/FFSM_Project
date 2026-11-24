@@ -1,0 +1,52 @@
+[    0.0 min] Start part 2. Main results: E:\Projects\Flash_Flood_Makkah\ffsm_project\data\results_R1_FABDEM\Makkah_FFSM_results_R1_FABDEM.xlsx
+[    0.0 min] Inventory identical to the main run: 2130 flood, 2399 non-flood; events: Apr2021, Dec2022, Jan2025, Nov2018, Sep2024
+[    0.1 min] C8 Random: folds identical to the main run: True
+[    0.2 min] C8 Random fold 1/5 done
+[    0.3 min] C8 Random fold 2/5 done
+[    0.3 min] C8 Random fold 3/5 done
+[    0.4 min] C8 Random fold 4/5 done
+[    0.4 min] C8 Random fold 5/5 done
+[    1.0 min] C8 Spatial: folds identical to the main run: True
+[    1.0 min] C8 Spatial fold 1/5 done
+[    1.1 min] C8 Spatial fold 2/5 done
+[    1.1 min] C8 Spatial fold 3/5 done
+[    1.2 min] C8 Spatial fold 4/5 done
+[    1.2 min] C8 Spatial fold 5/5 done
+[    3.7 min] C9 nested LOFO: All factors done
+[    5.2 min] C9 nested LOFO: Drainage density done
+[    6.6 min] C9 nested LOFO: Hillshade done
+[    8.0 min] C9 nested LOFO: Land use / land cover done
+[    9.4 min] C9 nested LOFO: Mean annual rainfall done
+[   10.7 min] C9 nested LOFO: NDVI done
+[   12.1 min] C9 nested LOFO: Population density done
+[   13.4 min] C9 nested LOFO: Slope done
+[   14.8 min] C9 nested LOFO: Hydrologic soil group done
+[   16.0 min] C9 nested LOFO: Stream power index done
+[   17.3 min] C9 nested LOFO: Topographic wetness index done
+[   17.3 min] C11: map for non-flood ratio 1:2
+[   17.8 min] C11: map for non-flood ratio 1:5
+[   20.4 min] Minor f: Baseline (with hillshade): spatial AUC 0.778
+[   22.0 min] Minor f: Hillshade removed: spatial AUC 0.776
+[   23.6 min] Minor f: Hillshade replaced by northness and eastness: spatial AUC 0.774
+[   23.6 min] C9 2 km block exclusion, held-out Apr2021: train 1132/1544, test 228/855
+[   28.4 min] C9 2 km block exclusion, held-out Dec2022: train 780/1393, test 445/1006
+[   32.7 min] C9 2 km block exclusion, held-out Jan2025: train 236/850, test 704/1549
+[   36.4 min] C9 2 km block exclusion, held-out Nov2018: train 778/1312, test 304/1087
+[   40.8 min] C9 2 km block exclusion, held-out Sep2024: train 294/862, test 540/1537
+[   44.4 min] C9 500 m patch exclusion, held-out Apr2021: train 1017/1318, test 228/855
+[   48.9 min] C9 500 m patch exclusion, held-out Dec2022: train 716/1154, test 445/1006
+[   54.1 min] C9 500 m patch exclusion, held-out Jan2025: train 202/658, test 704/1549
+[   57.6 min] C9 500 m patch exclusion, held-out Nov2018: train 714/1060, test 304/1087
+[   61.7 min] C9 500 m patch exclusion, held-out Sep2024: train 243/625, test 540/1537
+[   65.3 min] C10: refitting the final stacking ensemble
+[   65.6 min] C10 permutation SHAP, draw 1/5
+[   79.8 min] C10 group Shapley (10 players, exact), draw 1/5
+[   87.5 min] C10 permutation SHAP, draw 2/5
+[  101.4 min] C10 group Shapley (10 players, exact), draw 2/5
+[  109.2 min] C10 permutation SHAP, draw 3/5
+[  123.1 min] C10 group Shapley (10 players, exact), draw 3/5
+[  130.9 min] C10 permutation SHAP, draw 4/5
+[  144.8 min] C10 group Shapley (10 players, exact), draw 4/5
+[  152.6 min] C10 permutation SHAP, draw 5/5
+[  166.6 min] C10 group Shapley (10 players, exact), draw 5/5
+[  174.4 min] Finished. Results: E:\Projects\Flash_Flood_Makkah\ffsm_project\data\results_R1_FABDEM\Makkah_FFSM_results_R1_part2.xlsx

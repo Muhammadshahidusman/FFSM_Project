@@ -1,0 +1,88 @@
+{
+  "description": "Final stacking ensemble of the R1 (FABDEM) run, refitted from final_hyperparameters.json on all inventory points; sklearn StackingClassifier.",
+  "use": "joblib.load(path).predict_proba(X[features])[:, 1] -> flash flood susceptibility index",
+  "features": [
+    "draindens",
+    "hillshade",
+    "lulc",
+    "rainfall",
+    "ndvi",
+    "popdensity",
+    "slope",
+    "hsg",
+    "spi",
+    "twi",
+    "ndvi_mean330",
+    "slope_sd330",
+    "dist_flat",
+    "dist_steep",
+    "spi_mean330",
+    "spi_max330",
+    "twi_max330",
+    "dist_hightwi",
+    "builtup_frac330",
+    "veg_frac330"
+  ],
+  "categorical_features": [
+    "lulc",
+    "hsg"
+  ],
+  "base_learners": [
+    "Random Forest",
+    "XGBoost",
+    "LightGBM",
+    "CatBoost"
+  ],
+  "meta_learner": "LogisticRegression (L2, C=1)",
+  "training_points": {
+    "flood": 2130,
+    "non_flood": 2399
+  },
+  "hyperparameters": {
+    "Random Forest": {
+      "min_samples_leaf": 20,
+      "max_features": 0.33,
+      "max_depth": 20
+    },
+    "XGBoost": {
+      "subsample": 0.6,
+      "reg_lambda": 5.0,
+      "n_estimators": 200,
+      "min_child_weight": 10,
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "colsample_bytree": 0.7
+    },
+    "LightGBM": {
+      "subsample": 0.8,
+      "reg_lambda": 5.0,
+      "num_leaves": 31,
+      "n_estimators": 400,
+      "min_child_samples": 80,
+      "learning_rate": 0.03,
+      "colsample_bytree": 1.0
+    },
+    "CatBoost": {
+      "learning_rate": 0.01,
+      "l2_leaf_reg": 5.0,
+      "iterations": 500,
+      "depth": 4
+    }
+  },
+  "checks": {
+    "meta_coefficients_max_abs_diff": 1.2401191185062999e-13,
+    "ffsi_pixels_checked": 20000,
+    "ffsi_max_abs_diff": 0.0
+  },
+  "software": {
+    "python": "3.11.14",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "numpy": "1.26.4",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  },
+  "note": "Load with the same package versions; pickled models are not portable across versions."
+}

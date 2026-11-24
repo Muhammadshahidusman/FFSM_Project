@@ -1,9 +1,7 @@
 .venv/
 __pycache__/
 *.pyc
-models/*.joblib
-outputs/*.png
-outputs/*.json
-outputs/*.npz
-outputs/*.tif
 .ipynb_checkpoints/
+catboost_info/
+_to_delete/
+*.aux.xml
