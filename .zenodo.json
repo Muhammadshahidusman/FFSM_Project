@@ -1,0 +1,27 @@
+{
+  "title": "Flash Flood Susceptibility in Urban Wadis of Makkah, Saudi Arabia, Based on a Sentinel-1 Flood Inventory and Machine Learning: code and data",
+  "upload_type": "software",
+  "description": "Code, processed data, per-event Sentinel-1 flood polygons, inventory points and model outputs for the manuscript submitted to Frontiers in Environmental Science (ID 2027117).",
+  "creators": [
+    {
+      "name": "Usman, Muhammad Shahid"
+    },
+    {
+      "name": "Alsubhi, Yazeed"
+    },
+    {
+      "name": "Miandad, Muhammad"
+    },
+    {
+      "name": "Rahman, Ghani"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flash flood susceptibility",
+    "Sentinel-1",
+    "machine learning",
+    "SHAP",
+    "Makkah"
+  ]
+}
